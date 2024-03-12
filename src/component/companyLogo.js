@@ -1,10 +1,10 @@
 import React from "react";
-import amazon from '../assets/images/client/amazon.svg';
-import google from '../assets/images/client/google.svg';
-import lenovo from '../assets/images/client/lenovo.svg';
-import paypal from '../assets/images/client/paypal.svg';
-import shopify from '../assets/images/client/shopify.svg';
-import spotify from '../assets/images/client/spotify.svg';
+import amazon from '../assets/images/client/uniswap.png';
+import google from '../assets/images/client/aave.png';
+import lenovo from '../assets/images/client/pano.png';
+import paypal from '../assets/images/client/layer.jfif';
+import shopify from '../assets/images/client/poly2.png';
+import spotify from '../assets/images/client/arbi.png';
 export default function CompanyLogo(){
     return(
         <div className="grid md:grid-cols-6 grid-cols-2 justify-center gap-[30px]">
