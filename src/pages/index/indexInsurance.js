@@ -20,6 +20,7 @@ import { FaArrowRight } from '../../assets/icons/icons'
 import { startupAbout, startupServices } from '../../data/dataTwo';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import UserFeedBack2 from '../../component/userFeedBack2';
 
 const responsive = {
     desktop: {
@@ -39,6 +40,20 @@ const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 1,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
+  const responsive3 = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -278,16 +293,31 @@ export default function IndexInsurance() {
             <section className="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800">
           <div className="container relative">
             <div className="grid grid-cols-1 pb-8 text-center">
-              <h3 className="mb-6 mt-8 md:text-5xl text-3xl md:leading-normal leading-normal font-bold text-center justify-center">Our Services</h3>
+              <h3 className="mb-6 mt-8 md:text-4xl text-3xl md:leading-normal leading-normal font-semibold text-center justify-center">Our Services</h3>
 
               <p className="text-slate-400 max-w-xl mx-auto"></p>
             </div>
 
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
+            <div className="grid grid-rows-1 mt-8">
+            <Carousel
+          responsive={responsive3}
+          swipeable={false}
+          draggable={false}
+          autoPlay={true}
+          autoPlaySpeed={4000}
+          infinite={true}
+          ssr={true}
+          keyBoardControl={true}
+          showDots={true}
+          slidesToSlide={1}
+          containerClass="carousel-container"
+          dotListClass="custom-dot-list-style"
+          itemClass="carousel-item-padding-40-px"
+        >
               {startupServices.map((item, index) => {
                 let Icons = item.icon
                 return (
-                  <div key={index} className="group p-6 rounded-lg shadow dark:shadow-gray-800 bg-white dark:bg-slate-900 hover:-translate-y-2 transition-all duration-500 ease-in-out">
+                  <div key={index} className="group p-6 rounded-lg shadow dark:shadow-gray-800 bg-white dark:bg-slate-900 hover:-translate-y-2 transition-all duration-500 ease-in-out" style={{height:"390px", width:"330px"}}>
                     <div className={`${item.background} absolute inset-0 rounded-md -mt-[10px] -ms-[10px] h-[98%] w-[98%] -z-1`}></div>
                     <div
                       className="w-16 h-16 bg-indigo-600/5 group-hover:bg-indigo-600 group-hover:text-white border-2 border-indigo-600/20 text-indigo-600 rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out relative">
@@ -312,12 +342,13 @@ export default function IndexInsurance() {
                   </div>
                 )
               })}
+              </Carousel>
             </div>
           </div>
         </section>
 
 
-            <section className="py-20 w-full relative bg-[url('../../assets/images/insurance/bg.jpg')] bg-center bg-no-repeat bg-cover jarallax" data-jarallax data-speed="0.5">
+            {/* <section className="py-20 w-full relative bg-[url('../../assets/images/insurance/bg.jpg')] bg-center bg-no-repeat bg-cover jarallax" data-jarallax data-speed="0.5">
                 <div className="container relative">
                     <div className="md:flex">
                         <div className="lg:w-1/3 md:w-1/2 px-6 py-8 rounded-md shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900">
@@ -367,8 +398,17 @@ export default function IndexInsurance() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
+             <div className="container relative md:mt-24 mt-16">
+                    <div className="grid grid-cols-1 pb-8 text-center">
+                        <h6 className="text-indigo-600 text-base mb-2">Testimonial</h6>
+                        <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">What Our Users Say</h3>
 
+                        <p className="text-slate-500 max-w-xl mx-auto">Search all the open positions on the web. Get your own personalized salary estimate. Read reviews on over 30000+ companies worldwide.</p>
+                    </div>
+
+                    <UserFeedBack2 />
+                </div>
             <Blog className="container relative md:mt-24 mt-16 mb-16" id={""} />
             <Footer />
           

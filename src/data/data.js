@@ -959,41 +959,33 @@ export const teamData =[
 
 export const feedback =[
     {
-        description: '" It seems that only fragments of the original text remain in the Lorem Ipsum texts used today. "',
+        id:1,
+        description: "The technical research done for our AI usecase was one of the best we have ever seen.",
         image: client1,
-        name: 'Calvin Carlo',
-        role: 'Manager'
+        name: 'Abhishek',
+        role: 'TechVZero'
     },
     {
-        description: `" The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. "`,
+        id:2,
+        description: `We were able to test many innovative AI solutions for our co-working hub with Prodigal AI. "`,
         image: client2,
-        name: 'Christa Smith',
-        role: 'Manager'
+        name: 'Usha',
+        role: '91 SpringBoard'
     },
     {
-        description: '" One disadvantage of Lorum Ipsum is that in Latin certain letters appear more frequently than others. "',
+        id:3,
+        description: 'With Prodigal AI as our AI consultant, the team was inspired to another level "',
         image: client3,
-        name: 'Jemina CLone',
-        role: 'Manager'
+        name: 'Nikhil Mishra',
+        role: 'ZeeQ'
     },
     {
-        description: '" Thus, Lorem Ipsum has only limited suitability as a visual filler for German texts. "',
+        id:4,
+        description: '"Working with Prodigal AI was like a master class of System Design for scalable products."',
         image: client4,
-        name: 'Smith Vodka',
-        role: 'Manager'
+        name: 'Vineet',
+        role: 'AlterCode'
     },
-    {
-        description: '" There is now an abundance of readable dummy texts. These are usually used when a text is required. "',
-        image: client5,
-        name: 'Cristino Murfi',
-        role: 'Manager'
-    },
-    {
-        description: '" According to most sources, Lorum Ipsum can be traced back to a text composed by Cicero. "',
-        image: client6,
-        name: 'Cristino Murfi',
-        role: 'Manager'
-    }
 ]
 
 export const commentsData = [

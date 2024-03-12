@@ -1112,7 +1112,7 @@ export const startupServices = [
     },
     {
         icon: AiOutlineDollar,
-        title: "Arbitrage Bot",
+        title: "Research and Consultancy",
 
         point1: "Research and Consultancy",
         point2: "Customizable trading strategies",

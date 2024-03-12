@@ -1,41 +1,46 @@
 import React from 'react'
 
-import TinySlider from 'tiny-slider-react';
+// import TinySlider from 'tiny-slider-react';
 
 import { feedback } from '../data/data';
-
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 export default function UserFeedBack2() {
-    let settings = {
-        container: '.tiny-three-item',
-        controls: false,
-        mouseDrag: true,
-        loop: true,
-        rewind: true,
-        autoplay: true,
-        autoplayButtonOutput: false,
-        autoplayTimeout: 3000,
-        navPosition: "bottom",
-        speed: 400,
-        gutter: 12,
-        responsive: {
-            992: {
-                items: 3
-            },
-    
-            767: {
-                items: 2
-            },
-    
-            320: {
-                items: 1
-            },
+   
+    const responsive = {
+        desktop: {
+          breakpoint: { max: 3000, min: 1024 },
+          items: 3,
         },
-    }
+        tablet: {
+          breakpoint: { max: 1024, min: 464 },
+          items: 1,
+        },
+        mobile: {
+          breakpoint: { max: 464, min: 0 },
+          items: 1,
+        },
+      };
     return (
         <div>
-            <div className="grid grid-cols-1 mt-8">
-                <div className="tiny-three-item">
-                    <TinySlider settings={settings}>
+            <div className="grid grid-rows-1 mt-8">
+
+                    {/* <TinySlider settings={settings}> */}
+         <Carousel
+          responsive={responsive}
+          swipeable={false}
+          draggable={false}
+          autoPlay={true}
+          autoPlaySpeed={4000}
+          infinite={true}
+          ssr={true}
+          keyBoardControl={true}
+          showDots={true}
+          slidesToSlide={1}
+          containerClass="carousel-container"
+          dotListClass="custom-dot-list-style"
+          itemClass="carousel-item-padding-40-px"
+        >
                         {feedback.map((item, index) => (
 
                             <div className="tiny-slide text-center" key={index}>
@@ -60,8 +65,8 @@ export default function UserFeedBack2() {
                                 </div>
                             </div>
                         ))}
-                    </TinySlider>
-                </div>
+                    {/* </TinySlider> */}
+                    </Carousel>
             </div>
         </div>
     )

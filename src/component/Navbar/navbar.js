@@ -68,10 +68,10 @@ export default function Navbar(props) {
                 <Link className="logo" to="/">
                 <span className="inline-block dark:hidden">
                     <img src={logo_dark} className="l-dark" style={{ marginTop: "10px" ,height:"40px ", width:"150px" }} alt="" />
-                    <img src={logo_light} className="l-light" 
+                    <img src={logo_dark} className="l-light" 
                      style={{ marginTop: "10px" ,height:"40px ", width:"150px"}} alt="" />
                 </span>
-                <img src={logo_light}  style={{ marginTop: "10px",height:"40px ", width:"150px" }} className="hidden dark:inline-block" alt="" />
+                <img src={logo_dark}  style={{ marginTop: "10px",height:"40px ", width:"150px" }} className="hidden dark:inline-block" alt="" />
             </Link>
             </div>
 
