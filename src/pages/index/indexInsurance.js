@@ -6,10 +6,8 @@ import hero from '../../assets/images/insurance/hero.png';
 import Navbar from '../../component/Navbar/navbar'
 import Footer from '../../component/Footer/footer';
 import Blog from '../../component/blog';
-import CookieModal from '../../component/cookieModal';
 import CompanyLogo from '../../component/companyLogo';
 
-import TinySlider from 'tiny-slider-react';
 import CountUp from 'react-countup';
 
 import ModalVideo from 'react-modal-video'
@@ -19,53 +17,37 @@ import { accordionData } from '../../data/dataTwo';
 import { insuranceTeam, insuranceservices,insuranceTab } from '../../data/dataFour';
 
 import { FaArrowRight } from '../../assets/icons/icons'
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
-const settings2 = {
-    container: '.tiny-six-item',
-    controls: true,
-    mouseDrag: true,
-    loop: true,
-    rewind: true,
-    autoplay: true,
-    autoplayButtonOutput: false,
-    autoplayTimeout: 3000,
-    navPosition: "bottom",
-    controlsText: ['<i class="mdi mdi-chevron-left "></i>', '<i class="mdi mdi-chevron-right"></i>'],
-    nav: false,
-    speed: 400,
-    gutter: 0,
-    responsive: {
-        1025: {
-            items: 6
-        },
-
-        992: {
-            items: 4
-        },
-
-        767: {
-            items: 3
-        },
-
-        320: {
-            items: 1
-        },
+const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 4,
     },
-}
-const settings = {
-    container: '.tiny-single-item',
-    items: 1,
-    controls: false,
-    mouseDrag: true,
-    loop: true,
-    rewind: true,
-    autoplay: true,
-    autoplayButtonOutput: false,
-    autoplayTimeout: 3000,
-    navPosition: "bottom",
-    speed: 400,
-    gutter: 16,
-}
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
+  const responsive2 = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
 export default function IndexInsurance() {
     let [isOpen, setOpen] = useState(false)
     let [activeIndex, setActiveIndex] = useState(0);
@@ -127,11 +109,25 @@ export default function IndexInsurance() {
                 <div className="container-fluid relative mt-8">
                     <div className="grid grid-cols-1 mt-8">
 
-                        <div className="tiny-six-item">
-                            <TinySlider settings={settings2}>
+                        
+                    <Carousel
+          responsive={responsive}
+          swipeable={false}
+          draggable={false}
+          autoPlay={true}
+          autoPlaySpeed={4000}
+          infinite={true}
+          ssr={true}
+          keyBoardControl={true}
+          showDots={false}
+          slidesToSlide={1}
+          containerClass="carousel-container"
+          dotListClass="custom-dot-list-style"
+          itemClass="carousel-item-padding-40-px"
+        >
                                 {insuranceservices.map((item, index) => (
 
-                                    <div className="tiny-slide" key={index}>
+                                    <div className="" key={index}>
                                         <div className="mx-2">
                                             <div className="group relative block overflow-hidden rounded-md transition-all duration-500">
                                                 <Link title="">
@@ -145,9 +141,9 @@ export default function IndexInsurance() {
                                         </div>
                                     </div>
                                 ))}
-                            </TinySlider>
+                            </Carousel>
 
-                        </div>
+                        
                     </div>
                 </div>
             </section>
@@ -278,12 +274,26 @@ export default function IndexInsurance() {
                 <div className="container relative">
                     <div className="md:flex">
                         <div className="lg:w-1/3 md:w-1/2 px-6 py-8 rounded-md shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900">
-                            <div className="tiny-single-item">
+                        <Carousel
+          responsive={responsive2}
+          swipeable={false}
+          draggable={false}
+          autoPlay={true}
+          autoPlaySpeed={4000}
+          infinite={true}
+          ssr={true}
+          keyBoardControl={true}
+          showDots={false}
+          slidesToSlide={1}
+          containerClass="carousel-container"
+          dotListClass="custom-dot-list-style"
+          itemClass="carousel-item-padding-40-px"
+        >
 
-                                <TinySlider settings={settings}>
+                               
                                     {insuranceTeam.map((item, index) => {
                                         return(
-                                            <div className="tiny-slide" key={index}>
+                                            <div className="" key={index}>
                                                 <div className="text-center">
                                                     <p className="text-lg text-slate-400 italic"> {item.feedback} </p>
     
@@ -304,9 +314,9 @@ export default function IndexInsurance() {
                                             </div>
                                         )
                                     })}
-                                </TinySlider>
+                               </Carousel>
 
-                            </div>
+                         
                         </div>
                     </div>
                 </div>
@@ -314,7 +324,7 @@ export default function IndexInsurance() {
 
             <Blog className="container relative md:mt-24 mt-16 mb-16" id={""} />
             <Footer />
-            <CookieModal />
+          
         </>
     )
 }
