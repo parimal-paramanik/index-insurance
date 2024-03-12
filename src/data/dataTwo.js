@@ -127,17 +127,17 @@ import * as Icon from 'react-feather';
 export const accordionData = [
     {
         id: 1,
-        title: 'How does it work ?',
+        title: 'How is our services unique than the others?',
         content: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.'
     },
     {
         id: 2,
-        title: 'Do I need a designer to use Techwind ?',
+        title: 'What value system does prodigal blockchain work on?',
         content: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.'
     },
     {
         id: 3,
-        title: 'What do I need to do to start selling ?',
+        title: 'Who is behind prodigal blockchain?',
         content: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.'
     },
     {

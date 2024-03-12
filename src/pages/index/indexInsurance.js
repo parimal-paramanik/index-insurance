@@ -72,9 +72,9 @@ export default function IndexInsurance() {
                     <div className="grid md:grid-cols-12 grid-cols-1 items-center mt-10 gap-[30px]">
                         <div className="md:col-span-7">
                             <div className="md:me-6">
-                                <div className="bg-white dark:bg-slate-900 text-slate-400 py-2 px-4 inline-flex items-center font-medium rounded-full shadow dark:shadow-gray-800"><span className="bg-indigo-600 text-white text-[12px] font-bold px-2.5 py-0 rounded-full me-2">Techwind</span> Get an insurance</div>
-                                <h4 className="font-bold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-5 mt-4">Insurance makes <br /> your life your better</h4>
-                                <p className="text-slate-400 text-lg max-w-xl">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS v3.x html page.</p>
+                                {/* <div className="bg-white dark:bg-slate-900 text-slate-400 py-2 px-4 inline-flex items-center font-medium rounded-full shadow dark:shadow-gray-800"><span className="bg-indigo-600 text-white text-[12px] font-bold px-2.5 py-0 rounded-full me-2">Techwind</span> Get an insurance</div> */}
+                                <h4 className="font-bold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-5 mt-4">Empower Your DeFi  <br /> Journey with Prodigal Blockchain</h4>
+                                <p className="text-slate-400 text-lg max-w-xl">"From entry to expansion, our comprehensive suite of services is designed to navigate, scale, and innovate your DeFi project.</p>
 
                                 <div className="mt-6">
                                     <Link to="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md me-2 mt-2">Request a Quote</Link>
