@@ -17,6 +17,7 @@ import { accordionData } from '../../data/dataTwo';
 import { insuranceTeam, insuranceservices,insuranceTab } from '../../data/dataFour';
 
 import { FaArrowRight } from '../../assets/icons/icons'
+import { startupAbout, startupServices } from '../../data/dataTwo';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -77,7 +78,7 @@ export default function IndexInsurance() {
                                 <p className="text-slate-400 text-lg max-w-xl">"From entry to expansion, our comprehensive suite of services is designed to navigate, scale, and innovate your DeFi project.</p>
 
                                 <div className="mt-6">
-                                    <Link to="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md me-2 mt-2">Request a Quote</Link>
+                                    <Link to="/contact" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md me-2 mt-2">Contact Us</Link>
                                 </div>
                             </div>
                         </div>
@@ -101,7 +102,7 @@ export default function IndexInsurance() {
             <section className="relative md:py-24 py-16">
                 <div className="container relative">
                     <div className="grid grid-cols-1 pb-8 items-end">
-                        <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold"><span className="text-indigo-600">Get the right protection</span> <br /> and move forward</h3>
+                        <h3 className="mb-4 md:text-5xl md:leading-normal text-2xl leading-normal font-bold"><span className="text-indigo-600">Get the right protection</span> <br /> and move forward</h3>
                         <p className="text-slate-400 max-w-xl">Explore and learn more about everything from machine learning and global payments to scaling your team.</p>
                     </div>
                 </div>
@@ -194,11 +195,11 @@ export default function IndexInsurance() {
                 <div className="container relative">
                     <div className="grid md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
                         <div className="relative">
-                            <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold"><span className="text-indigo-600">Insurance</span> for your <br /> everyday needs</h3>
+                            <h3 className="mb-4 md:text-5xl md:leading-normal text-2xl leading-normal font-bold"><span className="text-indigo-600">Insurance</span> for your <br /> everyday needs</h3>
                             <p className="text-slate-400 max-w-xl">Explore and learn more about everything from machine learning and global payments to scaling your team.</p>
 
                             <div className="mt-6">
-                                <Link to="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md me-2 mt-2">Get started</Link>
+                                <Link to="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md me-2 mt-2">Contact Us</Link>
                             </div>
                         </div>
 
@@ -228,7 +229,7 @@ export default function IndexInsurance() {
                     </div>
                 </div>
 
-                <div className="container relative md:mt-24 mt-16">
+                {/* <div className="container relative md:mt-24 mt-16">
                     <div className="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
                         <div className="lg:col-span-4 md:col-span-5">
                             <div className="sticky top-20">
@@ -236,16 +237,19 @@ export default function IndexInsurance() {
                                     <li role="presentation">
                                         <button className={`${ isOpenTab === 0 ?'text-white bg-indigo-600' : ''} px-4 py-2 text-base font-semibold rounded-md w-full hover:text-indigo-600 transition-all duration-500 ease-in-out`} id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="true"
                                         onClick={() => handleTabClick(0)}
-                                        >Wealth Management</button>
+                                        >UI/UX Designing</button>
                                     </li>
                                     <li role="presentation">
-                                        <button onClick={() => handleTabClick(1)} className={`${isOpenTab === 1 ?'text-white bg-indigo-600' : ''} px-4 py-2 text-base font-semibold rounded-md w-full mt-3 hover:text-indigo-600 transition-all duration-500 ease-in-out`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Retirement Planning</button>
+                                        <button onClick={() => handleTabClick(1)} className={`${isOpenTab === 1 ?'text-white bg-indigo-600' : ''} px-4 py-2 text-base font-semibold rounded-md w-full mt-3 hover:text-indigo-600 transition-all duration-500 ease-in-out`} id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">UI Development</button>
                                     </li>
                                     <li role="presentation">
-                                        <button onClick={() => handleTabClick(2)} className={`${isOpenTab === 2 ?'text-white bg-indigo-600' : ''} px-4 py-2 text-base font-semibold rounded-md w-full mt-3 hover:text-indigo-600 transition-all duration-500 ease-in-out`} id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Business Insurance</button>
+                                        <button onClick={() => handleTabClick(2)} className={`${isOpenTab === 2 ?'text-white bg-indigo-600' : ''} px-4 py-2 text-base font-semibold rounded-md w-full mt-3 hover:text-indigo-600 transition-all duration-500 ease-in-out`} id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Contract Development</button>
                                     </li>
                                     <li role="presentation">
                                         <button onClick={() => handleTabClick(3)} className={`${isOpenTab === 3 ?'text-white bg-indigo-600' : ''} px-4 py-2 text-base font-semibold rounded-md w-full mt-3 hover:text-indigo-600 transition-all duration-500 ease-in-out`} id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Life Insurance</button>
+                                    </li>
+                                    <li role="presentation">
+                                        <button onClick={() => handleTabClick(4)} className={`${isOpenTab === 3 ?'text-white bg-indigo-600' : ''} px-4 py-2 text-base font-semibold rounded-md w-full mt-3 hover:text-indigo-600 transition-all duration-500 ease-in-out`} id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Research and Consultancy</button>
                                     </li>
                                 </ul>
                             </div>
@@ -268,8 +272,51 @@ export default function IndexInsurance() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </section>
+
+            <section className="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800">
+          <div className="container relative">
+            <div className="grid grid-cols-1 pb-8 text-center">
+              <h3 className="mb-6 mt-8 md:text-5xl text-3xl md:leading-normal leading-normal font-bold text-center justify-center">Our Services</h3>
+
+              <p className="text-slate-400 max-w-xl mx-auto"></p>
+            </div>
+
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
+              {startupServices.map((item, index) => {
+                let Icons = item.icon
+                return (
+                  <div key={index} className="group p-6 rounded-lg shadow dark:shadow-gray-800 bg-white dark:bg-slate-900 hover:-translate-y-2 transition-all duration-500 ease-in-out">
+                    <div className={`${item.background} absolute inset-0 rounded-md -mt-[10px] -ms-[10px] h-[98%] w-[98%] -z-1`}></div>
+                    <div
+                      className="w-16 h-16 bg-indigo-600/5 group-hover:bg-indigo-600 group-hover:text-white border-2 border-indigo-600/20 text-indigo-600 rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out relative">
+                      <Icons className="w-6 h-6" />
+                    </div>
+
+                    <div className="content mt-7">
+                      <Link to="/page-services" className="title h5 text-lg font-medium hover:text-indigo-600">{item.title}</Link>
+                      <p className="text-slate-400 mt-3">{item.desc}</p>
+                      {/* <ul className="custom-ul">
+                        <li>{item.point1}</li>
+                        <li>{item.point2}</li>
+                        <li>{item.point3}</li>
+                        <li>{item.point4}</li>
+                      </ul>  */}
+                      <div className="mt-5">
+                        <Link
+                          className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">Read
+                          More  <FaArrowRight className="ms-2 text-[10px]" /></Link>
+                      </div>
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        </section>
+
+
             <section className="py-20 w-full relative bg-[url('../../assets/images/insurance/bg.jpg')] bg-center bg-no-repeat bg-cover jarallax" data-jarallax data-speed="0.5">
                 <div className="container relative">
                     <div className="md:flex">

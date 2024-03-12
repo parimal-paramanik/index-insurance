@@ -4,6 +4,7 @@ import './assets/libs/@mdi/font/css/materialdesignicons.min.css';
 import IndexInsurance from './pages/index/indexInsurance';
 import Switch from './component/Switch';
 import Research from './component/Research/Research';
+import Contact2 from './component/Contact/Contact2';
 export default function App() {
     return (
         <BrowserRouter>
@@ -12,6 +13,7 @@ export default function App() {
                
                 <Route exact path="/" element={<IndexInsurance />} />
                 <Route path="/research"element={<Research />} />
+                <Route path="/contact"element={<Contact2/>} />
                
             </Routes>
         

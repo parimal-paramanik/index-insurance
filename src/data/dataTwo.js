@@ -1071,35 +1071,86 @@ export const startupAbout = [
 ]
 export const startupServices = [
     {
-        icon:RiPresentationFill,
-        title:"Digital Marketing",
-        desc:"The phrasal sequence of the is now so that many campaign and benefit"
+        icon: RiPresentationFill,
+        title: "UI/UX Designing",
+        // background:"bg-red-500 ",
+        point1: "Customizable liquidity pools",
+        point2: "User-friendly interface",
+        point3: "Advanced pricing algorithms",
+        point4: "Secure and audited smart contracts",
+        desc:"Craft Engaging Experiences: Our UI/UX design team specializes in creating intuitive and visually appealing interfaces that ensure your DeFi project stands out and delivers a seamless user experience."
     },
     {
-        icon:LiaFileInvoiceDollarSolid,
-        title:"Investing",
-        desc:"The phrasal sequence of the is now so that many campaign and benefit"
+        icon: LiaFileInvoiceDollarSolid,
+        title: "UI Development",
+        background:"bg-indigo-600/5 ",
+        point1: "Auto-rebalancing",
+        point2: "Advanced pricing algorithms",
+        point3: "Risk mitigation algorithms",
+        point4: "Support for various assets and protocols",
+        desc:"Bring Designs to Life: With cutting-edge technology and an eye for detail, our UI development experts transform creative designs into functional, user-friendly platforms that drive engagement and retention."
     },
     {
-        icon:LiaMoneyCheckAltSolid,
-        title:"Mortgage Advisor",
-        desc:"The phrasal sequence of the is now so that many campaign and benefit"
+        icon: LiaMoneyCheckAltSolid,
+        title: "Contract Development",
+        
+        point1: "Multi-protocol interaction",
+        point2: "User-centric design and functionality",
+        point3: "DeFi Hedging support for vaults",
+        point4: "Composable via Connectors & Resolvers",
+        desc:"Secure and Efficient Smart Contracts: Our blockchain engineers develop, audit, and optimize smart contracts to power your DeFi services with trust, transparency, and top-tier security."
     },
     {
-        icon:RiPresentationFill,
-        title:"Real Estate",
-        desc:"The phrasal sequence of the is now so that many campaign and benefit"
+        icon: RiPresentationFill,
+        title: "Marketing and Community Building",
+
+        point1: "User-friendly interface",
+        point2: "Robust smart contracts",
+        point3: "Wide range of supported assets",
+        point4: "Support for NFT Creations",
+        desc:"Build Your Brand: Elevate your project with our strategic marketing and community building services, designed to increase visibility, foster a loyal community, and drive adoption across the DeFi ecosystem."
     },
     {
-        icon:AiOutlineDollar,
-        title:"Payroll & Accounting",
-        desc:"The phrasal sequence of the is now so that many campaign and benefit"
+        icon: AiOutlineDollar,
+        title: "Arbitrage Bot",
+
+        point1: "Research and Consultancy",
+        point2: "Customizable trading strategies",
+        point3: "Low-latency execution",
+        point4: "Extensible to multiple AMMs",
+        desc:"Insights for Innovation: Stay ahead of the curve with our research and consultancy services, providing you with the market insights and strategic advice needed to navigate the complex DeFi landscape successfully."
     },
     {
-        icon:LiaFileInvoiceDollarSolid,
-        title:"Branch Registration",
-        desc:"The phrasal sequence of the is now so that many campaign and benefit"
+        icon: LiaFileInvoiceDollarSolid,
+        title: "Connecting to the Right Teams",
+
+        point1: "Strategic planning and advisory",
+        point2: "Smart contract development and audit",
+        point3: "Tokenomics & Bonding",
+        point4: "Marketing and community building",
+        desc:"Expand Your Network: Leverage our extensive network of industry professionals, developers, and advisors to find the perfect collaborators and partners for your project"
     },
+    {
+        icon: LiaFileInvoiceDollarSolid,
+        title: "Token Launch/NFT Launch",
+
+        point1: "Cryptocurrency payme",
+        point2: "integration, Token Based Purchases",
+        point3: "Supply chain tracking",
+        point4: "Support for NFT Creations",
+        desc:"Launch with Confidence: Our comprehensive launch services ensure your token or NFT project hits the market with impact, from strategy development to execution and beyond"
+    },
+    {
+        icon: LiaFileInvoiceDollarSolid,
+        title: "DEX Listing",
+
+        point1: "Real-time data visualization",
+        point2: "Customizable analytics dashboard",
+        point3: "Performance tracking",
+        point4: "Detailed Metrics",
+        desc:"Maximize Your Reach: We guide you through the process of listing your token on decentralized exchanges (DEXs), increasing liquidity and accessibility for your project."
+    },
+   
 ]
 export const workPortfolio = [
     {
