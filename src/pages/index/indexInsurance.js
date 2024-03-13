@@ -22,7 +22,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import UserFeedBack2 from '../../component/userFeedBack2';
 import { TypeAnimation } from 'react-type-animation';
-import Tiny from '../../component/Contact/Tiny';
+// import Tiny from '../../component/Contact/Tiny';
 const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -165,7 +165,7 @@ export default function IndexInsurance() {
           dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-40-px"
         > 
-        
+
             
                                 {insuranceservices.map((item, index) => (
 
@@ -197,7 +197,7 @@ export default function IndexInsurance() {
                 </div>
                
             </section> 
-          <Tiny/>
+          {/* <Tiny/> */}
             <section className="py-36 w-full table relative bg-indigo-600">
                 <div className="absolute inset-0 bg-[url('../../assets/images/insurance/cta.png')] bg-bottom bg-no-repeat bg-cover"></div>
                 <div className="container relative">
