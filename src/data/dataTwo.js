@@ -128,17 +128,17 @@ export const accordionData = [
     {
         id: 1,
         title: 'How is our services unique than the others?',
-        content: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.'
+        content: 'Our service stands out by offering a holistic blend of customized DeFi solutions, pioneering research, and expansive networking, meticulously designed to nurture projects from their genesis to market leadership.'
     },
     {
         id: 2,
         title: 'What value system does prodigal blockchain work on?',
-        content: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.'
+        content: 'At Prodigal Blockchain, we blend global expertise with diverse, research-driven solutions and comprehensive marketing support to pioneer unparalleled excellence in DeFi.'
     },
     {
         id: 3,
         title: 'Who is behind prodigal blockchain?',
-        content: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.'
+        content: 'The Prodigal Blockchain team is a dynamic blend of experienced professionals and innovative minds dedicated to advancing the DeFi sector.'
     },
     {
         id: 4,
@@ -1078,12 +1078,13 @@ export const startupServices = [
         point2: "User-friendly interface",
         point3: "Advanced pricing algorithms",
         point4: "Secure and audited smart contracts",
-        desc:"Craft Engaging Experiences: Our UI/UX design team specializes in creating intuitive and visually appealing interfaces that ensure your DeFi project stands out and delivers a seamless user experience."
+        desc:"Craft Engaging Experiences: Our UI/UX design team specializes in creating intuitive and visually appealing interfaces that ensure your DeFi project stands out and delivers a seamless user experience.",
+        background:"bg-indigo-600 dark:bg-indigo-600 ",
     },
     {
         icon: LiaFileInvoiceDollarSolid,
         title: "UI Development",
-        background:"bg-indigo-600/5 ",
+        background:"bg-emerald-600 dark:bg-emerald-600 ",
         point1: "Auto-rebalancing",
         point2: "Advanced pricing algorithms",
         point3: "Risk mitigation algorithms",
@@ -1098,7 +1099,8 @@ export const startupServices = [
         point2: "User-centric design and functionality",
         point3: "DeFi Hedging support for vaults",
         point4: "Composable via Connectors & Resolvers",
-        desc:"Secure and Efficient Smart Contracts: Our blockchain engineers develop, audit, and optimize smart contracts to power your DeFi services with trust, transparency, and top-tier security."
+        desc:"Secure and Efficient Smart Contracts: Our blockchain engineers develop, audit, and optimize smart contracts to power your DeFi services with trust, transparency, and top-tier security.",
+        background:"bg-red-600 dark:bg-red-600  ",
     },
     {
         icon: RiPresentationFill,
@@ -1108,7 +1110,8 @@ export const startupServices = [
         point2: "Robust smart contracts",
         point3: "Wide range of supported assets",
         point4: "Support for NFT Creations",
-        desc:"Build Your Brand: Elevate your project with our strategic marketing and community building services, designed to increase visibility, foster a loyal community, and drive adoption across the DeFi ecosystem."
+        desc:"Build Your Brand: Elevate your project with our strategic marketing and community building services, designed to increase visibility, foster a loyal community, and drive adoption across the DeFi ecosystem.",
+        background:"bg-sky-600 dark:bg-sky-600  ",
     },
     {
         icon: AiOutlineDollar,
@@ -1118,12 +1121,13 @@ export const startupServices = [
         point2: "Customizable trading strategies",
         point3: "Low-latency execution",
         point4: "Extensible to multiple AMMs",
-        desc:"Insights for Innovation: Stay ahead of the curve with our research and consultancy services, providing you with the market insights and strategic advice needed to navigate the complex DeFi landscape successfully."
+        desc:"Insights for Innovation: Stay ahead of the curve with our research and consultancy services, providing you with the market insights and strategic advice needed to navigate the complex DeFi landscape successfully.",
+        background:"bg-indigo-600 dark:bg-indigo-600  ",
     },
     {
         icon: LiaFileInvoiceDollarSolid,
         title: "Connecting to the Right Teams",
-
+        background:"bg-emerald-600 dark:bg-emerald-600 ",
         point1: "Strategic planning and advisory",
         point2: "Smart contract development and audit",
         point3: "Tokenomics & Bonding",
@@ -1133,7 +1137,7 @@ export const startupServices = [
     {
         icon: LiaFileInvoiceDollarSolid,
         title: "Token Launch/NFT Launch",
-
+        background:"bg-red-600 dark:bg-red-600 ",
         point1: "Cryptocurrency payme",
         point2: "integration, Token Based Purchases",
         point3: "Supply chain tracking",
@@ -1143,7 +1147,7 @@ export const startupServices = [
     {
         icon: LiaFileInvoiceDollarSolid,
         title: "DEX Listing",
-
+        background:"bg-sky-600 dark:bg-sky-600",
         point1: "Real-time data visualization",
         point2: "Customizable analytics dashboard",
         point3: "Performance tracking",

@@ -21,11 +21,11 @@ import { startupAbout, startupServices } from '../../data/dataTwo';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import UserFeedBack2 from '../../component/userFeedBack2';
-
+import { TypeAnimation } from 'react-type-animation';
 const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 4,
+      items: 6,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -68,7 +68,7 @@ export default function IndexInsurance() {
     let [isOpen, setOpen] = useState(false)
     let [activeIndex, setActiveIndex] = useState(0);
     let [isOpenTab, setisOpen] = useState(0);
-
+    const [showSubtitle, setShowSubtitle] = useState(false);
     let handleTabClick = (index) => {
         setisOpen(index);
     };
@@ -85,11 +85,33 @@ export default function IndexInsurance() {
             <Navbar />
             <section className="relative table w-full md:py-44 py-36 bg-gray-50 dark:bg-slate-800">
                 <div className="container relative">
-                    <div className="grid md:grid-cols-12 grid-cols-1 items-center mt-10 gap-[30px]">
+                <div className="grid md:grid-cols-12 grid-cols-1 items-center mt-6 gap-[30px]">
+
                         <div className="md:col-span-7">
                             <div className="md:me-6">
-                                {/* <div className="bg-white dark:bg-slate-900 text-slate-400 py-2 px-4 inline-flex items-center font-medium rounded-full shadow dark:shadow-gray-800"><span className="bg-indigo-600 text-white text-[12px] font-bold px-2.5 py-0 rounded-full me-2">Techwind</span> Get an insurance</div> */}
-                                <h4 className="font-bold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-5 mt-4">Empower Your DeFi  <br /> Journey with Prodigal Blockchain</h4>
+
+                            <div animateIn="fadeIn" >
+                  <TypeAnimation
+                    cursor={false}
+                    sequence={[
+                      "Unlock DeFi's Full Potential",
+                      1000,
+                      'Elevate Your DeFi Project',
+                      1000,
+                      'Step Into the Future of Finance',
+                      1000,
+                      () => setShowSubtitle(true)
+                    ]}
+                    // speed={{ type: "keyStrokeDelayInMs", value: 150 }}
+                    wrapper="h1"
+                    style={{ fontSize: '50px' }}
+                    repeat={Infinity}
+                    speed={20}
+                    deletionSpeed={50}
+                  />
+                  <div>
+                  </div>
+                </div>
                                 <p className="text-slate-400 text-lg max-w-xl">"From entry to expansion, our comprehensive suite of services is designed to navigate, scale, and innovate your DeFi project.</p>
 
                                 <div className="mt-6">
@@ -117,11 +139,11 @@ export default function IndexInsurance() {
             <section className="relative md:py-24 py-16">
                 <div className="container relative">
                     <div className="grid grid-cols-1 pb-8 items-end">
-                        <h3 className="mb-4 md:text-5xl md:leading-normal text-2xl leading-normal font-bold"><span className="text-indigo-600">Get the right protection</span> <br /> and move forward</h3>
-                        <p className="text-slate-400 max-w-xl">Explore and learn more about everything from machine learning and global payments to scaling your team.</p>
+                        <h3 className="mb-4 md:text-4xl md:leading-normal text-2xl leading-normal font-semibold"><span className="text-indigo-600">Highlighting Innovation:</span> <br /> Signature Research Endeavors in DeFi</h3>
+                        <p className="text-slate-400 max-w-xl">Dive into our comprehensive studies and analyses that are pushing the boundaries of DeFi, offering fresh perspectives and groundbreaking solutions.</p>
                     </div>
                 </div>
-
+                 
                 <div className="container-fluid relative mt-8">
                     <div className="grid grid-cols-1 mt-8">
 
@@ -144,16 +166,19 @@ export default function IndexInsurance() {
                                 {insuranceservices.map((item, index) => (
 
                                     <div className="" key={index}>
-                                        <div className="mx-2">
+                                        <div className="">
                                             <div className="group relative block overflow-hidden rounded-md transition-all duration-500">
                                                 <Link title="">
                                                     <img src={item.image} className="transition-all duration-500 group-hover:scale-105" alt="" />
-                                                    <div className="absolute inset-0 group-hover:bg-indigo-600 opacity-0 group-hover:opacity-70 transition-all duration-500"></div>
+                                                    <div className="absolute inset-0 bg-indigo-600 opacity-0 group-hover:opacity-70 transition-all duration-500 flex justify-center items-center">
+                                    <p className="text-white text-center pl-4 pr-10">{item.desc}</p>
+                                </div>
                                                 </Link>
                                             </div>
                                             <div className="p-4 pb-0">
                                                 <Link to="#" className="relative inline-block font-semibold tracking-wide align-middle text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:transition-all after:duration-500 hover:text-indigo-600 after:bg-indigo-600 text-xl duration-500 ease-in-out">{item.title}</Link>
                                             </div>
+                                            
                                         </div>
                                     </div>
                                 ))}
@@ -171,13 +196,13 @@ export default function IndexInsurance() {
                     <div className="grid lg:grid-cols-2 grid-cols-1 items-center gap-[30px]">
                         <div className="order-2 lg:order-1 lg:mt-0 mt-8">
                             <div className="lg:me-6 text-center lg:text-start">
-                                <h3 className="mb-4 md:text-4xl text-3xl lg:leading-normal leading-normal text-white font-semibold">Compare insurance packages <br /> and obtain the best offer</h3>
-
+                                <h3 className="mb-4 md:text-4xl text-3xl lg:leading-normal leading-normal text-white font-semibold">DeFi by the Numbers: <br /> A Glimpse into the Future</h3>
+                                 
                                 <p className="text-white/80 max-w-xl mx-auto lg:ms-auto">Start working with Techwind that can provide everything you need to generate awareness, drive traffic, connect.</p>
 
-                                <div className="mt-6">
+                                {/* <div className="mt-6">
                                     <Link to="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-slate-100 hover:bg-slate-200 border-slate-100 hover:border-slate-200 text-indigo-600 rounded-md me-2 mt-2">Get a custom plan</Link>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
 
@@ -210,8 +235,8 @@ export default function IndexInsurance() {
                 <div className="container relative">
                     <div className="grid md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
                         <div className="relative">
-                            <h3 className="mb-4 md:text-5xl md:leading-normal text-2xl leading-normal font-bold"><span className="text-indigo-600">Insurance</span> for your <br /> everyday needs</h3>
-                            <p className="text-slate-400 max-w-xl">Explore and learn more about everything from machine learning and global payments to scaling your team.</p>
+                            <h3 className="mb-4 md:text-5xl md:leading-normal text-2xl leading-normal font-bold"><span className="text-indigo-600">Most</span> Asked<br /> Queries</h3>
+                            <p className="text-slate-400 max-w-xl">At Prodigal Blockchain, our unwavering commitment is the cornerstone of every project we undertake. We believe in the power of dedication, ensuring that each endeavor reflects our pure commitment and passion for excellence.</p>
 
                             <div className="mt-6">
                                 <Link to="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md me-2 mt-2">Contact Us</Link>
@@ -290,62 +315,43 @@ export default function IndexInsurance() {
                 </div> */}
             </section>
 
-            <section className="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800">
-          <div className="container relative">
-            <div className="grid grid-cols-1 pb-8 text-center">
-              <h3 className="mb-6 mt-8 md:text-4xl text-3xl md:leading-normal leading-normal font-semibold text-center justify-center">Our Services</h3>
+            <section className="relative md:py-10 py-8">
+                <div className="container relative md:mt-8 mt-6">
+                    <div className="grid grid-cols-1 pb-8 text-center">
+                        <h3 className="mb-6 mt-4 md:text-4xl text-3xl md:leading-normal leading-normal font-bold text-center justify-center">Our Services</h3>
 
-              <p className="text-slate-400 max-w-xl mx-auto"></p>
-            </div>
+                        {/* <p className="text-slate-400 max-w-xl mx-auto">The cornerstone of DeFi, the Decentralized Exchanges (DEXes). Our team has 
+          experience in building a diverse style of DEXes and are equipped to make your next 
+          DEX launch an excellent one.</p> */}
+                              </div>
 
-            <div className="grid grid-rows-1 mt-8">
-            <Carousel
-          responsive={responsive3}
-          swipeable={false}
-          draggable={false}
-          autoPlay={true}
-          autoPlaySpeed={4000}
-          infinite={true}
-          ssr={true}
-          keyBoardControl={true}
-          showDots={true}
-          slidesToSlide={1}
-          containerClass="carousel-container"
-          dotListClass="custom-dot-list-style"
-          itemClass="carousel-item-padding-40-px"
-        >
-              {startupServices.map((item, index) => {
-                let Icons = item.icon
-                return (
-                  <div key={index} className="group p-6 rounded-lg shadow dark:shadow-gray-800 bg-white dark:bg-slate-900 hover:-translate-y-2 transition-all duration-500 ease-in-out" style={{height:"390px", width:"330px"}}>
-                    <div className={`${item.background} absolute inset-0 rounded-md -mt-[10px] -ms-[10px] h-[98%] w-[98%] -z-1`}></div>
-                    <div
-                      className="w-16 h-16 bg-indigo-600/5 group-hover:bg-indigo-600 group-hover:text-white border-2 border-indigo-600/20 text-indigo-600 rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 transition-all duration-500 ease-in-out relative">
-                      <Icons className="w-6 h-6" />
+                    <div className="grid md:grid-cols-12 grid-cols-1 items-center mt-8 gap-[30px]">
+                        {startupServices.map((item,index)=>{
+                            return(
+                                <div key={index} className="lg:col-span-3 md:col-span-6">
+                                    <div className="team p-6 rounded-md shadow-md dark:shadow-gray-800 dark:border-gray-700 bg-white dark:bg-slate-900 relative " 
+                                     style={{height:"360px"}}
+                                    >
+                                        <div className={`${item.background} absolute inset-0  -mt-[10px] -ms-[10px] h-[98%] w-[98%] -z-1`}></div>
+                                        
+
+                                        <div className="content mt-4">
+                                            <Link to = "#" className="text-lg font-medium hover:text-indigo-600 block">{item.title}</Link>
+                                            {/* <span className="text-slate-400 block">{item.title}</span> */}
+
+                                            <p className="text-slate-400 mt-4">{item.desc}</p>
+
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                        })}
                     </div>
+                </div>
 
-                    <div className="content mt-7">
-                      <Link to="/page-services" className="title h5 text-lg font-medium hover:text-indigo-600">{item.title}</Link>
-                      <p className="text-slate-400 mt-3">{item.desc}</p>
-                      {/* <ul className="custom-ul">
-                        <li>{item.point1}</li>
-                        <li>{item.point2}</li>
-                        <li>{item.point3}</li>
-                        <li>{item.point4}</li>
-                      </ul>  */}
-                      <div className="mt-5">
-                        <Link
-                          className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500">Read
-                          More  <FaArrowRight className="ms-2 text-[10px]" /></Link>
-                      </div>
-                    </div>
-                  </div>
-                )
-              })}
-              </Carousel>
-            </div>
-          </div>
-        </section>
+          
+            </section>
 
 
             {/* <section className="py-20 w-full relative bg-[url('../../assets/images/insurance/bg.jpg')] bg-center bg-no-repeat bg-cover jarallax" data-jarallax data-speed="0.5">
@@ -401,7 +407,7 @@ export default function IndexInsurance() {
             </section> */}
              <div className="container relative md:mt-24 mt-16">
                     <div className="grid grid-cols-1 pb-8 text-center">
-                        <h6 className="text-indigo-600 text-base mb-2">Testimonial</h6>
+                        
                         <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">What Our Users Say</h3>
 
                         <p className="text-slate-500 max-w-xl mx-auto">Search all the open positions on the web. Get your own personalized salary estimate. Read reviews on over 30000+ companies worldwide.</p>

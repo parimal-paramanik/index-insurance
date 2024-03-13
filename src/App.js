@@ -12,7 +12,7 @@ export default function App() {
             <Routes>
                
                 <Route exact path="/" element={<IndexInsurance />} />
-                <Route path="/research"element={<Research />} />
+                <Route path="//blog-detail"element={<Research />} />
                 <Route path="/contact"element={<Contact2/>} />
                
             </Routes>

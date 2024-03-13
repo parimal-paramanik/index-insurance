@@ -623,7 +623,7 @@ export const foodBlogData = [
 export const blogData = [
     {
         id:1,
-        image:blog1,
+        image:blog10,
         title:'DEX',
         desc:"V2 style constant product market makers, v3 style concentrated markets, solidly forks, v4 hooks or Algebra integral, we offer a diverse set of choices based on your requirements",
         category:'Advisory',
@@ -633,7 +633,7 @@ export const blogData = [
     },
     {
         id:2,
-        image:blog2,
+        image:blog11,
         title:'ALMS',
         desc:"Automated Liquidity  Managers for vault based share minting, auto-rebalanc triggers, auto-compounding of fees & rewards/fees distribution, our ALM development offers all these solutions out of the box",
         category:'Travelling',
@@ -643,9 +643,9 @@ export const blogData = [
     },
     {
         id:3,
-        image:blog3,
+        image:blog12,
         title:'BACK TESTING',
-        desc:'The phrasal sequence of the is now so that many campaign and benefit',
+        desc:"V2 style constant product market makers, v3 style concentrated markets, solidly forks, v4 hooks or Algebra integral, we offer a diverse set of choices based on your requirements",
         category:'Advisory',
         date:'29th December 2023',
         client:client3,
@@ -653,9 +653,9 @@ export const blogData = [
     }, 
      {
         id:4,
-        image:blog4,
+        image:blog13,
         title:'RWA',
-        desc:'The phrasal sequence of the is now so that many campaign and benefit',
+        desc:"Tokenization and  Fractionalization of Real World  Assets (RWAs) is an upcoming revolution which will help  bring the new wave of users to  DeFi. Music Rights, Prop Tech or leasing of assets, we have a solution for every requirement.",
         category:'Tech',
         date:'13th March 2023',
         client:client4,
@@ -663,15 +663,15 @@ export const blogData = [
     },
     {
         id:5,
-        image:blog5,
+        image:blog14,
         title:'NFT MARKETS',
-        desc:'The phrasal sequence of the is now so that many campaign and benefit',
+        desc:'Launch your NFT collections  and trade them on open  markets, build staking mechanisms and multi-tier of NFTs for real world use case to build the next Unicorn.',
         category:'Lifestyle',
         date:'6th May 2023',
         client:client5,
         name:"Floyd Glasgow" ,
     },
-   
+    
 ];
 export const propertyListing = [
     {

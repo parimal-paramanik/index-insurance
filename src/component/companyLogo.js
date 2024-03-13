@@ -1,10 +1,10 @@
 import React from "react";
 import amazon from '../assets/images/client/uniswap.png';
 import google from '../assets/images/client/aave.png';
-import lenovo from '../assets/images/client/pano.png';
+import lenovo from '../assets/images/client/1inch2.png';
 import paypal from '../assets/images/client/layer.jfif';
-import shopify from '../assets/images/client/poly2.png';
-import spotify from '../assets/images/client/arbi.png';
+import shopify from '../assets/images/client/poly22.png';
+import spotify from '../assets/images/client/arb3.png';
 export default function CompanyLogo(){
     return(
         <div className="grid md:grid-cols-6 grid-cols-2 justify-center gap-[30px]">

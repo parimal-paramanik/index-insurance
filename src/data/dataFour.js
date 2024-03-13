@@ -351,31 +351,57 @@ export const insuranceTeam =[
 export const insuranceservices = [
     {
         image: insurance1,
-        title: 'Health Insurance'
+        title: 'Decentralized ExchangeS (V2 & V3)',
+        desc:"The cornerstone of DeFi, the Decentralized Exchanges (DEXes). Our team has  experience in building a diverse style of DEXes ."
+        // desc:"The cornerstone of DeFi, the Decentralized Exchanges (DEXes). Our team has  experience in building a diverse style of DEXes and are equipped to make your next DEX launch an excellent one."
     },
     {
         image: insurance2,
-        title: 'Life Insurance'
+        title: 'Lending And Borrowing Protocols',
+        desc:"Lending/borrowing protocols are the backbone of DeFi ecosystem. Its like a bank and is the first protocol on every .. "
+        // desc:"Lending/borrowing protocols are the backbone of DeFi ecosystem. Its like a bank and is the first protocol on every ecosystem. We are experienced in launching a lending borrowing protocol on multiple chains."
     },
     {
         image: insurance3,
-        title: 'Property Insurance'
-    },
-    {
-        image: insurance4,
-        title: 'Term Insurance'
-    },
-    {
-        image: insurance5,
-        title: 'General Insurance'
+        title: 'Real World Assets (RWA) & NFT Solutions',
+        desc:"Fractional Tokenization of Real World Assets is the next big revolution in Web3. Turbo Charge your product with your"
+        // desc:"Fractional Tokenization of Real World Assets is the next big revolution in Web3. Turbo Charge your product with your NFT Fractionalization product may it be audio rights, prop tech or mutual funds"
     },
     {
         image: insurance6,
-        title: 'Vehicle Insurance'
+        title: 'NFT Marketplace',
+        desc:"NFT markets bring creativity, intellect, capital to the blockchain market and is being used in Defi and Blockchain ."
+        // desc:"NFT markets bring creativity, intellect, capital to the blockchain market and is being used in Defi and Blockchain quite a lot now and has been growing on multiple  ecosystems and is taking the retail by a storm"
+    },
+    {
+        image: insurance1,
+        title: 'ALM',
+        desc:"With oncoming of concentrated liquidity dexes the range setting and manual rebalancing have made the work of retail LPs much more complex.."
+        // desc:"With oncoming of concentrated liquidity dexes the range setting and manual rebalancing have made the work of retail LPs much more complex and they need a  fund manager similar to TradFi to manage their funds correctly, we even have the  infrastructure to enable automated liquidity strategies"
+    },
+    {
+        image: insurance4,
+        title: 'Proxy Accounts and Account Abstraction',
+        desc:"Account abstraction is the next big thing that will enable participation of retail users that will .."
+        // desc:"Account abstraction is the next big thing that will enable participation of retail users that will enable them to use the infrastructure easily and contract will handle all complexity"
+    },
+    {
+        image: insurance5,
+        title: 'Arbitrage Bots',
+        desc:"Multiple dexes and multiple price sources are available in defi and to get the best  arbitrage opportunities you ..."
+        // desc:"Multiple dexes and multiple price sources are available in defi and to get the best  arbitrage opportunities you need to keep checking dex prices and make sure you can  execute transaction before others keeping a close watch"
+    },
+    {
+        image: insurance6,
+        title: 'AMM Backtesting Engine',
+        desc:"Be sure of your strategy that you want to run on dexes, backtesting is important part  of a Liquidity provisioning lifecycle"
+        // desc:"Be sure of your strategy that you want to run on dexes, backtesting is important part  of a Liquidity provisioning lifecycle, get your own backtesting engine that gives you insights and details about your position"
     },
     {
         image: insurance7,
-        title: 'Retirement Plans'
+        title: 'IDO Launch',
+        desc:"IDO (Initial Dex offering) is one of the ways of getting new liquidity for tokens and bootstrap a lot of .."
+        // desc:"IDO (Initial Dex offering) is one of the ways of getting new liquidity for tokens and bootstrap a lot of liquidity in liquidity pools that is simple to hear at once but when it comes into play there are a lot of things that have to be considered."
     },
 ]
 export const insuranceTab =[
