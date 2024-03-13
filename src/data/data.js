@@ -958,30 +958,66 @@ export const teamData =[
 ]
 
 export const feedback =[
+    // {
+    //     id:1,
+    //     description: "The technical research done for our AI usecase was one of the best we have ever seen.",
+    //     image: client1,
+    //     name: 'Abhishek',
+    //     role: 'TechVZero'
+    // },
     {
         id:1,
-        description: "The technical research done for our AI usecase was one of the best we have ever seen.",
+        description: "We know the ecosystem completely",
         image: client1,
         name: 'Abhishek',
         role: 'TechVZero'
     },
     {
         id:2,
-        description: `We were able to test many innovative AI solutions for our co-working hub with Prodigal AI. "`,
+        description: ` Connected with multiple defi projects
+        "`,
         image: client2,
         name: 'Usha',
         role: '91 SpringBoard'
     },
+    // {
+    //     id:2,
+    //     description: `We were able to test many innovative AI solutions for our co-working hub with Prodigal AI. "`,
+    //     image: client2,
+    //     name: 'Usha',
+    //     role: '91 SpringBoard'
+    // },
     {
         id:3,
-        description: 'With Prodigal AI as our AI consultant, the team was inspired to another level "',
+        description: ' Quite familiar with automation, tools and new launches "',
         image: client3,
         name: 'Nikhil Mishra',
         role: 'ZeeQ'
     },
+    // {
+    //     id:3,
+    //     description: 'With Prodigal AI as our AI consultant, the team was inspired to another level "',
+    //     image: client3,
+    //     name: 'Nikhil Mishra',
+    //     role: 'ZeeQ'
+    // },
     {
         id:4,
-        description: '"Working with Prodigal AI was like a master class of System Design for scalable products."',
+        description: 'We keep researching on new launches and protocols',
+        image: client4,
+        name: 'Vineet',
+        role: 'AlterCode'
+    },
+    // {
+    //     id:4,
+    //     description: '"Working with Prodigal AI was like a master class of System Design for scalable products."',
+    //     image: client4,
+    //     name: 'Vineet',
+    //     role: 'AlterCode'
+    // },
+    {
+        id:5,
+        description: 'Always research EIP',
         image: client4,
         name: 'Vineet',
         role: 'AlterCode'

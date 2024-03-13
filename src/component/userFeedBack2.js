@@ -57,11 +57,11 @@ export default function UserFeedBack2() {
                                         </ul>
                                     </div>
 
-                                    <div className="text-center mt-5">
+                                    {/* <div className="text-center mt-5">
                                         <img src={item.image} className="h-14 w-14 rounded-full shadow-md mx-auto" alt="" />
                                         <h6 className="mt-2 font-semibold">{item.name}</h6>
                                         <span className="text-slate-400 text-sm">{item.role}</span>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         ))}

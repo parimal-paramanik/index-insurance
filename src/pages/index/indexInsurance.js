@@ -408,9 +408,10 @@ export default function IndexInsurance() {
              <div className="container relative md:mt-24 mt-16">
                     <div className="grid grid-cols-1 pb-8 text-center">
                         
-                        <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">What Our Users Say</h3>
+                        {/* <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">What Our Users Say</h3> */}
+                        <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">What We do Different from Others</h3>
 
-                        <p className="text-slate-500 max-w-xl mx-auto">Search all the open positions on the web. Get your own personalized salary estimate. Read reviews on over 30000+ companies worldwide.</p>
+                        {/* <p className="text-slate-500 max-w-xl mx-auto">Search all the open positions on the web. Get your own personalized salary estimate. Read reviews on over 30000+ companies worldwide.</p> */}
                     </div>
 
                     <UserFeedBack2 />
