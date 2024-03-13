@@ -332,8 +332,9 @@ export default function IndexInsurance() {
                                     <div className="team p-6 rounded-md shadow-md dark:shadow-gray-800 dark:border-gray-700 bg-white dark:bg-slate-900 relative " 
                                      style={{height:"360px"}}
                                     >
-                                        <div className={`${item.background} absolute inset-0  -mt-[10px] -ms-[10px] h-[98%] w-[98%] -z-1`}></div>
+                                        <div className={`${item.background} rounded-md   absolute inset-0  -mt-[10px] -ms-[10px] h-[98%] w-[98%] -z-1`}></div>
                                         
+                                      
 
                                         <div className="content mt-4">
                                             <Link to = "#" className="text-lg font-medium hover:text-indigo-600 block">{item.title}</Link>
