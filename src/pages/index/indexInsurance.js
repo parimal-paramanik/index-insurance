@@ -9,7 +9,7 @@ import Blog from '../../component/blog';
 import CompanyLogo from '../../component/companyLogo';
 
 import CountUp from 'react-countup';
-
+import TinySlider from 'tiny-slider-react';
 import ModalVideo from 'react-modal-video'
 import "../../../node_modules/react-modal-video/css/modal-video.css";
 
@@ -22,6 +22,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import UserFeedBack2 from '../../component/userFeedBack2';
 import { TypeAnimation } from 'react-type-animation';
+import Tiny from '../../component/Contact/Tiny';
 const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -64,6 +65,7 @@ const responsive = {
       items: 1,
     },
   };
+
 export default function IndexInsurance() {
     let [isOpen, setOpen] = useState(false)
     let [activeIndex, setActiveIndex] = useState(0);
@@ -144,11 +146,11 @@ export default function IndexInsurance() {
                     </div>
                 </div>
                  
-                <div className="container-fluid relative mt-8">
+             <div className="container-fluid relative mt-8">
                     <div className="grid grid-cols-1 mt-8">
-
-                        
-                    <Carousel
+                   
+                     
+                 <Carousel
           responsive={responsive}
           swipeable={false}
           draggable={false}
@@ -162,11 +164,15 @@ export default function IndexInsurance() {
           containerClass="carousel-container"
           dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-40-px"
-        >
+        > 
+        
+            
                                 {insuranceservices.map((item, index) => (
 
                                     <div className="" key={index}>
+                                    {/* <div className="tiny-slide" key={index}> */}
                                         <div className="">
+                                        {/* <div className="mx-2"> */}
                                             <div className="group relative block overflow-hidden rounded-md transition-all duration-500">
                                                 <Link title="">
                                                     <img src={item.image} className="transition-all duration-500 group-hover:scale-105" alt="" />
@@ -183,13 +189,15 @@ export default function IndexInsurance() {
                                     </div>
                                 ))}
                             </Carousel>
+                            {/* </TinySlider> */}
+                            {/* </div> */}
 
                         
                     </div>
                 </div>
-            </section>
-
-
+               
+            </section> 
+          <Tiny/>
             <section className="py-36 w-full table relative bg-indigo-600">
                 <div className="absolute inset-0 bg-[url('../../assets/images/insurance/cta.png')] bg-bottom bg-no-repeat bg-cover"></div>
                 <div className="container relative">
