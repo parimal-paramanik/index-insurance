@@ -34,10 +34,10 @@ import client8 from '../assets/images/client/08.jpg'
 import insurance1 from '../assets/images/insurance/1.jpg';
 import insurance2 from '../assets/images/insurance/lendingg.png';
 // import insurance2 from '../assets/images/insurance/2.jpg';
-import insurance3 from '../assets/images/insurance/3.jpg';
+import insurance3 from '../assets/images/insurance/ab.png';
 import insurance4 from '../assets/images/insurance/4.jpg';
-import insurance5 from '../assets/images/insurance/5.jpg';
-import insurance6 from '../assets/images/insurance/6.jpg';
+import insurance5 from '../assets/images/insurance/500.png';
+import insurance6 from '../assets/images/insurance/nft.png';
 import insurance7 from '../assets/images/insurance/7.jpg';
 
 import cowork1 from '../assets/images/cowork/7.jpg';
