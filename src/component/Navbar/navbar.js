@@ -1,6 +1,8 @@
 import React from 'react'
-import logo_dark from '../../assets/images/logo-dark.png';
-import logo_light from '../../assets/images/logo-light.png';
+import logo_dark from '../../assets/images/Frame.png';
+import logo_light from '../../assets/images/Frame.png';
+// import logo_dark from '../../assets/images/logo-dark.png';
+// import logo_light from '../../assets/images/logo-light.png';
 import '../../assets/libs/@mdi/font/css/materialdesignicons.min.css';
 import '../../assets/css/tailwind.css';
 import { useState, useEffect } from 'react';
@@ -67,11 +69,11 @@ export default function Navbar(props) {
           <div>
                 <Link className="logo" to="/">
                 <span className="inline-block dark:hidden">
-                    <img src={logo_dark} className="l-dark" style={{ marginTop: "10px" ,height:"40px ", width:"150px" }} alt="" />
+                    <img src={logo_dark} className="l-dark" style={{ marginTop: "15px" ,height:"40px ", width:"150px" }} alt="" />
                     <img src={logo_dark} className="l-light" 
-                     style={{ marginTop: "10px" ,height:"40px ", width:"150px"}} alt="" />
+                     style={{ marginTop: "15px" ,height:"40px ", width:"150px"}} alt="" />
                 </span>
-                <img src={logo_dark}  style={{ marginTop: "10px",height:"40px ", width:"150px" }} className="hidden dark:inline-block" alt="" />
+                <img src={logo_dark}  style={{ marginTop: "15px",height:"40px ", width:"150px" }} className="hidden dark:inline-block" alt="" />
             </Link>
             </div>
 

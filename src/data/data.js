@@ -967,14 +967,14 @@ export const feedback =[
     // },
     {
         id:1,
-        description: "We know the ecosystem completely",
+        description: `"We know the ecosystem completely"`,
         image: client1,
         name: 'Abhishek',
         role: 'TechVZero'
     },
     {
         id:2,
-        description: ` Connected with multiple defi projects
+        description: ` "Connected with multiple defi projects
         "`,
         image: client2,
         name: 'Usha',
@@ -989,7 +989,7 @@ export const feedback =[
     // },
     {
         id:3,
-        description: ' Quite familiar with automation, tools and new launches "',
+        description: ' " Quite familiar with automation, tools and new launches "',
         image: client3,
         name: 'Nikhil Mishra',
         role: 'ZeeQ'
@@ -1003,7 +1003,7 @@ export const feedback =[
     // },
     {
         id:4,
-        description: 'We keep researching on new launches and protocols',
+        description: `" We keep researching on new launches and protocols "`,
         image: client4,
         name: 'Vineet',
         role: 'AlterCode'
@@ -1017,7 +1017,7 @@ export const feedback =[
     // },
     {
         id:5,
-        description: 'Always research EIP',
+        description: `" Always research EIP "`,
         image: client4,
         name: 'Vineet',
         role: 'AlterCode'

@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-import logo_light from '../../assets/images/logo-light.png';
+import logo_light from '../../assets/images/Frame.png';
+// import logo_light from '../../assets/images/logo-light.png';
 import american_ex from '../../assets/images/payments/american-ex.png';
 import discover from '../../assets/images/payments/discover.png';
 import master_card from '../../assets/images/payments/master-card.png';

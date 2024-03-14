@@ -45,23 +45,19 @@ export default function UserFeedBack2() {
 
                             <div className="tiny-slide text-center" key={index}>
                                 <div className="cursor-e-resize">
-                                    <div className="content relative shadow dark:shadow-gray-800 m-2 p-6 bg-white dark:bg-slate-900 before:content-[''] before:absolute before:start-1/2 before:-bottom-[4px] before:box-border before:border-8 before:rotate-[45deg] before:border-t-transparent before:border-e-white dark:before:border-e-slate-900 before:border-b-white dark:before:border-b-slate-900 before:border-s-transparent before:shadow-testi dark:before:shadow-gray-700 before:origin-top-left">
-                                        <i className="mdi mdi-format-quote-open mdi-48px text-indigo-600"></i>
-                                        <p className="text-slate-400">{item.description}</p>
-                                        <ul className="list-none mb-0 text-amber-400 mt-3 space-x-1">
+                                    <div className="content relative shadow dark:shadow-gray-300 m-2 p-6 bg-white dark:bg-slate-300 before:content-[''] before:absolute before:start-1/2 before:-bottom-[4px] before:box-border before:border-8 before:rotate-[45deg] before:border-t-transparent before:border-e-white dark:before:border-e-slate-300 before:border-b-white dark:before:border-b-slate-300 before:border-s-transparent before:shadow-testi dark:before:shadow-gray-300 before:origin-top-left" style={{height:"100px"}}>
+                                        {/* <i className="mdi mdi-format-quote-open mdi-48px text-indigo-600"></i> */}
+                                        <p className="text-black font-bold font-5xl text-center">{item.description}</p>
+                                        {/* <ul className="list-none mb-0 text-amber-400 mt-3 space-x-1">
                                             <li className="inline"><i className="mdi mdi-star"></i></li>
                                             <li className="inline"><i className="mdi mdi-star"></i></li>
                                             <li className="inline"><i className="mdi mdi-star"></i></li>
                                             <li className="inline"><i className="mdi mdi-star"></i></li>
                                             <li className="inline"><i className="mdi mdi-star"></i></li>
-                                        </ul>
+                                        </ul> */}
                                     </div>
 
-                                    {/* <div className="text-center mt-5">
-                                        <img src={item.image} className="h-14 w-14 rounded-full shadow-md mx-auto" alt="" />
-                                        <h6 className="mt-2 font-semibold">{item.name}</h6>
-                                        <span className="text-slate-400 text-sm">{item.role}</span>
-                                    </div> */}
+                                    
                                 </div>
                             </div>
                         ))}

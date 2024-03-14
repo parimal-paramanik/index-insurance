@@ -92,7 +92,7 @@ export default function IndexInsurance() {
                         <div className="md:col-span-7">
                             <div className="md:me-6">
 
-                            <div animateIn="fadeIn" >
+                            <div animateIn="fadeIn"style={{ height:"140px" }} >
                   <TypeAnimation
                     cursor={false}
                     sequence={[
@@ -126,7 +126,7 @@ export default function IndexInsurance() {
                             <div className="relative">
                                 <img src={hero} className="rounded-lg shadow-md dark:shadow-gray-800" alt="" />
                                 <div className="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
-                                    <Link to="#" onClick={() => setOpen(true)} data-type="youtube" data-id="S_CGed6E610"
+                                    <Link to="#" onClick={() => setOpen(true)} data-type="youtube" data-id=""
                                         className="lightbox h-20 w-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600 dark:text-white">
                                         <i className="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
                                     </Link>
@@ -136,7 +136,7 @@ export default function IndexInsurance() {
                     </div>
                 </div>
             </section>
-            <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="S_CGed6E610" onClose={() => setOpen(false)} />
+            <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="" onClose={() => setOpen(false)} />
 
             <section className="relative md:py-24 py-16">
                 <div className="container relative">
@@ -177,7 +177,7 @@ export default function IndexInsurance() {
                                                 <Link title="">
                                                     <img src={item.image} className="transition-all duration-500 group-hover:scale-105" alt="" />
                                                     <div className="absolute inset-0 bg-indigo-600 opacity-0 group-hover:opacity-70 transition-all duration-500 flex justify-center items-center">
-                                    <p className="text-white text-center pl-4 pr-10">{item.desc}</p>
+                                    <p className="text-white text-center pl-4 pr-10 mt-16">{item.desc}</p>
                                 </div>
                                                 </Link>
                                             </div>
