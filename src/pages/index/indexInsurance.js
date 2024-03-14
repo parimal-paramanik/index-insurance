@@ -169,10 +169,9 @@ export default function IndexInsurance() {
             
                                 {insuranceservices.map((item, index) => (
 
-                                    <div className="" key={index}>
-                                    {/* <div className="tiny-slide" key={index}> */}
-                                        <div className="">
-                                        {/* <div className="mx-2"> */}
+                                    <div className="" key={index} >
+                                        <div className="" >
+                                 
                                             <div className="group relative block overflow-hidden rounded-md transition-all duration-500">
                                                 <Link title="">
                                                     <img src={item.image} className="transition-all duration-500 group-hover:scale-105" alt="" />
@@ -189,9 +188,7 @@ export default function IndexInsurance() {
                                     </div>
                                 ))}
                             </Carousel>
-                            {/* </TinySlider> */}
-                            {/* </div> */}
-
+                           
                         
                     </div>
                 </div>
