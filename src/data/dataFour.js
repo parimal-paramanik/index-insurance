@@ -31,14 +31,15 @@ import client6 from '../assets/images/client/06.jpg'
 import client7 from '../assets/images/client/07.jpg'
 import client8 from '../assets/images/client/08.jpg'
 
-import insurance1 from '../assets/images/insurance/1.jpg';
+import insurance1 from '../assets/images/insurance/ALM.png';
 import insurance2 from '../assets/images/insurance/lendingg.png';
 // import insurance2 from '../assets/images/insurance/2.jpg';
 import insurance3 from '../assets/images/insurance/ab.png';
 import insurance4 from '../assets/images/insurance/4.jpg';
 import insurance5 from '../assets/images/insurance/500.png';
 import insurance6 from '../assets/images/insurance/nft.png';
-import insurance7 from '../assets/images/insurance/7.jpg';
+import insurance7 from '../assets/images/insurance/IDO.png';
+import amm from "../assets/images/insurance/amm.png"
 
 import cowork1 from '../assets/images/cowork/7.jpg';
 import cowork2 from '../assets/images/cowork/8.jpg';
@@ -378,7 +379,7 @@ export const insuranceservices = [
        
     },
     {
-        image: insurance4,
+        image: insurance2,
         title: 'Proxy Accounts and Account Abstraction',
         desc:"Account abstraction is the next big thing that will enable participation of retail users that will .."
       
@@ -390,7 +391,7 @@ export const insuranceservices = [
        
     },
     {
-        image: insurance6,
+        image: amm,
         title: 'AMM Backtesting Engine',
         desc:"Be sure of your strategy that you want to run on dexes, backtesting is important part  of a Liquidity provisioning lifecycle"
    

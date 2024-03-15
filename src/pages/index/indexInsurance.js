@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 
-import hero from '../../assets/images/insurance/hero.png';
+import hero from '../../assets/images/insurance/blc.jpg';
 
 import Navbar from '../../component/Navbar/navbar'
 import Footer from '../../component/Footer/footer';
