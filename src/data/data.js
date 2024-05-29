@@ -66,11 +66,11 @@ import blog6 from '../assets/images/food/blog/1.jpg';
 import blog7 from '../assets/images/blog/13.jpg';
 import blog8 from '../assets/images/blog/14.jpg';
 import blog9 from '../assets/images/food/blog/2.jpg';
-import blog10 from '../assets/images/blog/02.jpg';
-import blog11 from '../assets/images/blog/03.jpg';
-import blog12 from '../assets/images/blog/04.jpg';
-import blog13 from '../assets/images/blog/05.jpg';
-import blog14 from '../assets/images/blog/06.jpg';
+import blog10 from '../assets/images/blog/dex.jpg';
+import blog11 from '../assets/images/blog/alm.jpeg';
+import blog12 from '../assets/images/blog/back.jpg';
+import blog13 from '../assets/images/blog/rwa.jpg';
+import blog14 from '../assets/images/blog/nft.jpg';
 import blog15 from '../assets/images/blog/07.jpg';
 import blog16 from '../assets/images/blog/08.jpg';
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 
-import hero from '../../assets/images/insurance/blc.jpg';
+import hero from '../../assets/images/insurance/cta.png';
 
 import Navbar from '../../component/Navbar/navbar'
 import Footer from '../../component/Footer/footer';
@@ -196,7 +196,7 @@ export default function IndexInsurance() {
             </section> 
           {/* <Tiny/> */}
             <section className="py-36 w-full table relative bg-indigo-600">
-                <div className="absolute inset-0 bg-[url('../../assets/images/insurance/cta.png')] bg-bottom bg-no-repeat bg-cover"></div>
+                <div className="absolute inset-0 bg-[url('../../assets/images/insurance/cba.png')] bg-bottom bg-no-repeat bg-cover"></div>
                 <div className="container relative">
                     <div className="grid lg:grid-cols-2 grid-cols-1 items-center gap-[30px]">
                         <div className="order-2 lg:order-1 lg:mt-0 mt-8">

@@ -31,15 +31,16 @@ import client6 from '../assets/images/client/06.jpg'
 import client7 from '../assets/images/client/07.jpg'
 import client8 from '../assets/images/client/08.jpg'
 
-import insurance1 from '../assets/images/insurance/ALM.png';
-import insurance2 from '../assets/images/insurance/lendingg.png';
-// import insurance2 from '../assets/images/insurance/2.jpg';
-import insurance3 from '../assets/images/insurance/ab.png';
-import insurance4 from '../assets/images/insurance/4.jpg';
-import insurance5 from '../assets/images/insurance/500.png';
-import insurance6 from '../assets/images/insurance/nft.png';
-import insurance7 from '../assets/images/insurance/IDO.png';
-import amm from "../assets/images/insurance/amm.png"
+import dex from '../assets/images/insurance/dex.jpg';
+import alm from '../assets/images/insurance/alm.jpeg';
+import lending from '../assets/images/insurance/lending.jpg';
+import proxy from '../assets/images/insurance/proxy.jpg';
+import rwa from '../assets/images/insurance/rwa.jpg';
+// import insurance4 from '../assets/images/insurance/4.jpg';
+import arbi from '../assets/images/insurance/arbii.png';
+import nft from '../assets/images/insurance/nft.jpg';
+import ido from '../assets/images/insurance/idooo.jpg';
+import back from "../assets/images/insurance/back.jpg"
 
 import cowork1 from '../assets/images/cowork/7.jpg';
 import cowork2 from '../assets/images/cowork/8.jpg';
@@ -352,52 +353,52 @@ export const insuranceTeam =[
 ]
 export const insuranceservices = [
     {
-        image: insurance1,
+        image: dex,
         title: 'Decentralized ExchangeS (V2 & V3)',
         desc:"The cornerstone of DeFi, the Decentralized Exchanges (DEXes). Our team has  experience in building a diverse style of DEXes ."
     },
     {
-        image: insurance2,
+        image: lending,
         title: 'Lending And Borrowing Protocols',
         desc:"Lending/borrowing protocols are the backbone of DeFi ecosystem. Its like a bank and is the first protocol on every .. "
     },
     {
-        image: insurance3,
+        image: rwa,
         title: 'Real World Assets (RWA) & NFT Solutions',
         desc:"Fractional Tokenization of Real World Assets is the next big revolution in Web3. Turbo Charge your product with your"
     },
     {
-        image: insurance6,
+        image: nft,
         title: 'NFT Marketplace',
         desc:"NFT markets bring creativity, intellect, capital to the blockchain market and is being used in Defi and Blockchain ."
        
     },
     {
-        image: insurance1,
-        title: 'ALM',
+        image: alm,
+        title: 'Automated liquidity manager',
         desc:"With oncoming of concentrated liquidity dexes the range setting and manual rebalancing have made the work of retail LPs much more complex.."
        
     },
     {
-        image: insurance2,
+        image: proxy,
         title: 'Proxy Accounts and Account Abstraction',
         desc:"Account abstraction is the next big thing that will enable participation of retail users that will .."
       
     },
     {
-        image: insurance5,
+        image: arbi,
         title: 'Arbitrage Bots',
         desc:"Multiple dexes and multiple price sources are available in defi and to get the best  arbitrage opportunities you ..."
        
     },
     {
-        image: amm,
+        image: back,
         title: 'AMM Backtesting Engine',
         desc:"Be sure of your strategy that you want to run on dexes, backtesting is important part  of a Liquidity provisioning lifecycle"
    
     },
     {
-        image: insurance7,
+        image: ido,
         title: 'IDO Launch',
         desc:"IDO (Initial Dex offering) is one of the ways of getting new liquidity for tokens and bootstrap a lot of .."
     },
