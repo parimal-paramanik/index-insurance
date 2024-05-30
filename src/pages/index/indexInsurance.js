@@ -123,19 +123,19 @@ export default function IndexInsurance() {
                             </div>
                         </div>
 
-                        <div className="md:col-span-5  " style={{width:"500px"}}>
+                        {/* <div className="md:col-span-5  " style={{width:"500px"}}>
                             
                             <img src={hero} className="rounded-lg   shadow-md dark:shadow-gray-800" alt="" style={{width:"500px"}} />
                             
                        
-                    </div>
-                               {/* <div className="md:col-span-5 w-full md:max-w-[800px]">
+                    </div> */}
+                               <div className="md:col-span-5 w-full md:max-w-[800px]">
                             <img
                                 src={hero}
                                 className="rounded-lg shadow-md dark:shadow-gray-800 w-full md:max-w-[800px]"
                                 alt=""
                             />
-                            </div> */}
+                            </div>
 
 
 
