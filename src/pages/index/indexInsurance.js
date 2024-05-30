@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 
-import hero from '../../assets/images/insurance/29932.jpg';
+import hero from '../../assets/images/insurance/1_RbYqdE9GOig4JA21df_LhA.jpg';
 // import hero from '../../assets/images/insurance/rwa.jpg';
 
 import Navbar from '../../component/Navbar/navbar'
@@ -88,7 +88,7 @@ export default function IndexInsurance() {
             <Navbar />
             <section className="relative table w-full md:py-44 py-36 bg-gray-50 dark:bg-slate-800">
                 <div className="container relative">
-                <div className="grid md:grid-cols-12 grid-cols-1 items-center mt-6 gap-[30px]">
+                <div className="grid md:grid-cols-12 grid-cols-1 w-full items-center mt-6 gap-[30px] ">
 
                         <div className="md:col-span-7">
                             <div className="md:me-6">
@@ -129,7 +129,7 @@ export default function IndexInsurance() {
                             
                        
                     </div> */}
-                               <div className="md:col-span-5 w-full md:max-w-[800px]">
+                               <div className="md:col-span-5 w-full md:max-w-[800px] ">
                             <img
                                 src={hero}
                                 className="rounded-lg shadow-md dark:shadow-gray-800 w-full md:max-w-[800px]"
