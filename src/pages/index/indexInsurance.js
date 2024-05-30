@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 
-import hero from '../../assets/images/insurance/1_RbYqdE9GOig4JA21df_LhA.jpg';
+// import hero from '../../assets/images/insurance/1_RbYqdE9GOig4JA21df_LhA.jpg';
+import hero from '../../assets/images/insurance/29933.jpg';
 // import hero from '../../assets/images/insurance/rwa.jpg';
 
 import Navbar from '../../component/Navbar/navbar'
