@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 
-import hero from '../../assets/images/insurance/cta.png';
+import hero from '../../assets/images/insurance/29932.jpg';
+// import hero from '../../assets/images/insurance/rwa.jpg';
 
 import Navbar from '../../component/Navbar/navbar'
 import Footer from '../../component/Footer/footer';
@@ -114,7 +115,7 @@ export default function IndexInsurance() {
                   <div>
                   </div>
                 </div>
-                                <p className="text-slate-400 text-lg max-w-xl">"From entry to expansion, our comprehensive suite of services is designed to navigate, scale, and innovate your DeFi project.</p>
+                                <p className="text-slate-400 text-lg max-w-xl mt-16">"From entry to expansion, our comprehensive suite of services is designed to navigate, scale, and innovate your DeFi project.</p>
 
                                 <div className="mt-6">
                                     <Link to="/contact" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md me-2 mt-2">Contact Us</Link>
@@ -122,17 +123,22 @@ export default function IndexInsurance() {
                             </div>
                         </div>
 
-                        <div className="md:col-span-5">
-                            <div className="relative">
-                                <img src={hero} className="rounded-lg shadow-md dark:shadow-gray-800" alt="" />
-                                <div className="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
-                                    <Link to="#" onClick={() => setOpen(true)} data-type="youtube" data-id=""
-                                        className="lightbox h-20 w-20 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-indigo-600 dark:text-white">
-                                        <i className="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
+                        <div className="md:col-span-5  " style={{width:"500px"}}>
+                            
+                            <img src={hero} className="rounded-lg   shadow-md dark:shadow-gray-800" alt="" style={{width:"500px"}} />
+                            
+                       
+                    </div>
+                               {/* <div className="md:col-span-5 w-full md:max-w-[800px]">
+                            <img
+                                src={hero}
+                                className="rounded-lg shadow-md dark:shadow-gray-800 w-full md:max-w-[800px]"
+                                alt=""
+                            />
+                            </div> */}
+
+
+
                     </div>
                 </div>
             </section>
